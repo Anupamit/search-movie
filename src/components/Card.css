@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    text-align: center;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+.card-container:hover {
+    transform: scale(1.05);
+}
