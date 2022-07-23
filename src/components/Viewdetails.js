@@ -10,7 +10,7 @@ function Moviedetails(){
 
     useEffect(()=>{
         const fetchMovieDetails= async () => {
-            let url= `https://www.omdbapi.com/?i=${id}&apikey=1ecb7ecf`;
+            let url= `https://www.omdbapi.com/?i=${id}&apikey=hhf`;
             let response=await fetch(url);
             let responseJson= await response.json();
             setMovies(responseJson)

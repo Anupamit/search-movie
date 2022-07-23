@@ -9,7 +9,7 @@ function Movieapi() {
     const [searchmovie, setSearchmovie] = useState('')
 
     const fetchMovieData = async (searchmovie) => {
-        let url= `https://www.omdbapi.com/?s=${searchmovie}&apikey=1ecb7ecf`;
+        let url= `https://www.omdbapi.com/?s=${searchmovie}&apikey=hhhhd`;
         let response=await fetch(url);
         let responseJson= await response.json();
         if (responseJson.Search) {
