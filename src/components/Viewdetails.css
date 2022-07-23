@@ -1,0 +1,19 @@
+.view-card-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.view-card-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
