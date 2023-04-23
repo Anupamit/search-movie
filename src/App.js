@@ -1,7 +1,7 @@
-import './components/Movieapi.css';
+import './Styles/Movieapi.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Movieapi from './components/Movieapi';
-import Viewdetails from './components/Viewdetails';
+import Movieapi from './Components/Movieapi';
+import Viewdetails from './Components/Viewdetails';
 
 function App() {
   return (

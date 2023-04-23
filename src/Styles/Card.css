@@ -1,0 +1,110 @@
+.container {
+    margin: 0 auto;
+    max-width: 910px;
+  }
+  
+  .movie {
+    display: inline-block;
+    width: 230px;
+    height: 440px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    transition: height 1s;
+    cursor: pointer;
+  }
+  /* star button */
+  .movie:after {
+    font-family: FontAwesome;
+    content: "\f006";
+    font-size: 35px;
+    position: relative;
+    left: -0.1cm;
+    top: -1.6cm;
+    float: right;
+  }
+  
+  .cover {
+    border: 2px solid gray;
+    height: 70%;
+    overflow: hidden;
+  }
+  
+  .cover img {
+    width: 100%;
+  }
+  
+  .movie p {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .movie .author {
+    font-size: 15px;
+  }
+  button{
+    display: flex;
+    align-items: center;
+    border: none;
+    height: 28px;
+    padding: 0 24px 0 16px;
+    letter-spacing: 0.25px;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #aaa;
+    color: black;
+  }
+  @media (max-width: 941px) {
+    .container {
+      max-width: 700px;
+    }
+    .movie {
+      margin: 49px;
+    }
+  }
+  @media (max-width: 730px) {
+    .movie {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+  
+  /*********************************
+    other
+    **********************************/
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -3px;
+  }
+  
+  /*movie height smaller, cover opacity, move text onto cover and star too
+    animate it */
+  #list-th:target .movie {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+  }
+  
+  #list-th:target .cover {
+    width: 246px;
+  }
+  
+  #list-th:target img {
+    opacity: 0.1;
+  }
+  
+  #list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+  }
+  /* remove button? */
+  #large-th:target .movie {
+    height: 390px;
+  }
